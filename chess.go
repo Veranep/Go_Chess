@@ -20,19 +20,33 @@ func main() {
     for i>0{
         printboard(board)
 
-        if(i%2==0){
+        if(board.SideToMove == 1){
             fmt.Println("It is " + player2name + "'s turn!")
         }else{
             fmt.Println("It is " + player1name + "'s turn!")
         }
 
     board = moves(board)
+    if (len(board.LegalMoves()) == 0 ){
+        i = -10
+    } 
     i++
     }
+    if(board.SideToMove == 1){
+        fmt.Println(player1name + "won!")
+    }else{
+        fmt.Println(player2name + "won!")
+    }
+
 }
 
 func moves(b *chess.Board) *chess.Board{
     fmt.Println("This is the list of moves you can make:")
+    
+    if (len(b.LegalMoves()) == 0){
+        return b
+    }
+    
     fmt.Println(b.LegalMoves())
     fmt.Println("Moves are constructed like {to from promotion}.")
     fmt.Println("For the promotion: 0 is no promotion, 2/3 is a pawn, 4/5 is a knight, 6/7 is a bishop, 8/9 is a rook, 10/11 is a queen and 12/13 is a king.")
