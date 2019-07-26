@@ -1,0 +1,15 @@
+Well, first of all, CONGRATS!!! You made a lovely chess project that works and is short and sweet. I hope you enjoyed the process of learning and using a new language, and the making of the project. With that being said, lemme start my review.
+
+Pros:
+Its a neatly written code, and I did like the simplicity throughout it. 
+The Terminal symbols are a lovely detail, Iove the looks.
+The namings are consistent
+
+Cons:
+I am not sure about the not make a move and pass turn choice. In chess there are a lot of moments in which player wont notice its an impossible move, scuh as when the king's path is blocked by an enemy pawn. Furthermore, there might be misscalculations since this is a terminal game and all is not easy to see. Therefore I believe after checking the legality, illegal moves should have a do over. But thats just my take on it.
+Also, I feel like you could have divided the code a bit more to functions to increase readability.
+Finally, I feel like all the strings that repeatedly come after the board is quite overwhelming, maybe you could have ordered them to be a bit lesser, and make sure the promotion part comes when there actually is a promotion? Also, how does a pawn get promoted to a king? :D
+
+All in all its a really neat code, and you did fix it up real quick. Hope you learnt how to play a bit as well :P
+
+P.s. I just did a minor suggestion in the code as well.
